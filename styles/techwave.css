@@ -48,10 +48,10 @@ main {
     color: transparent;
     background-clip: text;
 }
+
 .white {
     color: #FFFFFF;
 }
-
 
 
 
@@ -170,11 +170,73 @@ nav .hamburger {
     padding: 12px 20px;
 }
 
-.hide{
-    display:none;
+.hide {
+    display: none;
 }
+
+
+
+
+/* about-section */
+#about-scection {
+    padding: 50px 200px 120px 200px;
+}
+
+.about-textcontent {
+    text-align: center;
+
+}
+
+.about-textcontent h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #FFFFFF;
+    margin-bottom: 16px;
+}
+
+.about-textcontent p {
+    font-size: 1rem;
+    line-height: 20px;
+    color: #ffffff9a;
+}
+
+
+.about-textcontent .para-2 {
+    font-size: 1rem;
+    margin-top: 20px;
+}
+
+.about-textcontent hr {
+    margin-bottom: 80px;
+    margin-top: 80px;
+    border: 1px solid #ffffff5b;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.card {
+    width: 240px;
+    text-align: center;
+    padding-right: 110px;
+}
+
+.card h2 {
+    color: #00FF88;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.card p {
+    font-size: 1rem;
+    color: #FFFFFF;
+}
+
 /* footer section  */
-footer{
+footer {
     margin-top: 120px;
     background: url(../assets/footer-bg.png);
     background-repeat: no-repeat;
@@ -185,32 +247,36 @@ footer{
 
 }
 
-.footer-container{
+.footer-container {
     max-width: 1360px;
     margin: 0 auto;
     padding: 120px;
     text-align: center;
 }
-.footer-container h1{
+
+.footer-container h1 {
     font-size: 4rem;
     margin-bottom: 11px;
- 
+
 }
+
 .link-container {
-    max-width:544px;
+    max-width: 544px;
     display: grid;
-    grid-template-columns: repeat(4,1fr);
-    gap:40px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
     margin: 0 auto;
-   align-items: center;
+    align-items: center;
 }
-.link-container a{
+
+.link-container a {
     color: #fafafaa4;
     text-decoration: none;
 }
-.copyright{
+
+.copyright {
     color: #fafafa9d;
-    padding-top:32px ;
+    padding-top: 32px;
 }
 
 
@@ -242,7 +308,7 @@ footer{
     /* banner section */
     .banner {
         padding-top: 0.8em;
-        min-height: 100vh;
+        height: auto;
         background-size: contain;
         background-position: top center;
     }
@@ -261,53 +327,91 @@ footer{
         width: 10vw;
         height: auto;
     }
+
     #new {
-    top: 1px;
-    right: -18px;
-    font-size: 0.8rem;
-}
+        top: 1px;
+        right: -18px;
+        font-size: 0.8rem;
+    }
 
 
     .content h1 {
         font-size: 2.5rem;
     }
-    .btn-primary{
+
+    .btn-primary {
         font-size: 0.8rem;
         padding: 12px;
     }
-    .green-btn{
+
+    .green-btn {
         margin-left: 10px;
     }
 
+    /* about-section */
+    #about-scection {
+        padding: 0;
+    }
+
+    .about-textcontent h2 {
+        margin-top: 40px;
+        font-size: 2rem;
+    }
+
+    .about-textcontent p,
+    .para-2 {
+        width: 100%;
+
+    }
+    .card {
+        padding: 0;
+        width: 100%;
+    }
+    .card-container{
+        grid-template-columns: repeat(2,1fr);
+        gap: 20px;
+    
+        
+    }
+    .card h2 {
+    font-size: 2rem;
+    
+}
 
 
 
 
 
-/* footer-section */
-footer{
+
+
+    /* footer-section */
+    footer {
         background-size: contain;
-}
-footer .footer-container{
- padding: 40px 20px;
-}
-.link-container {
-    max-width: 255px;
-    grid-template-columns: repeat(2,1fr);
-    column-gap:16px;
-    padding: 60px 60px;
-    margin-top: 24px;
-    justify-content: center;
-  
-}
-.footer-container h1{
-    font-size: 3rem;
- 
-}
- .footer-container .copyright{
-    color: #fafafa9d;
-    padding:0px;
-  
-}
- 
+    }
+
+    footer .footer-container {
+        padding: 40px 20px;
+    }
+
+    .link-container {
+        max-width: 255px;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 16px;
+        padding: 60px 60px;
+        margin-top: 24px;
+        justify-content: center;
+
+    }
+
+    .footer-container h1 {
+        font-size: 3rem;
+
+    }
+
+    .footer-container .copyright {
+        color: #fafafa9d;
+        padding: 0px;
+
+    }
+
 }
