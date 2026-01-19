@@ -58,9 +58,10 @@ nav {
 
 }
 
-nav .hamburger{
+nav .hamburger {
     display: none;
 }
+
 .logo .white {
     color: #FFFFFF;
 }
@@ -88,18 +89,49 @@ nav .hamburger{
 
 /* banner-section */
 
-#banner{
-    background:url(../assets/hero-bg.png);
+.banner {
+    background: url(../assets/hero-bg.png);
     background-repeat: no-repeat;
-     max-width: 1600vw;
-  height: 760px;
-  background-size: cover;
-  background-position: center;
-  border-top: 1px solid #412567;
+    width: 100%;
+    height: 760px;
+    background-size: cover;
+    background-position: center;
+    border-top: 1px solid #412567;
+}
+
+
+
+.bg-container {
+    max-width: 550px;
+    padding-top: 34px;
+    margin: 0 auto;
+}
+
+.bg-container .bg {
+    position: relative;
+    background: url(../assets/hero-circle.png);
+    background-repeat: no-repeat;
+    width: 350px;
+    height: 350px;
+    background-size: contain;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+
+}
+
+.bg-container .bg img {
+    max-width: 200px;
+    height: auto;
+}
+
+.banner-textcontent {
+    text-align: center;
+
 }
 
 /* badge */
-#new{
+#new {
     position: absolute;
     top: 16px;
     right: 16px;
@@ -109,56 +141,32 @@ nav .hamburger{
     font-size: 1rem;
     font-weight: 600;
     background-color: #00FF88;
-   box-shadow: 0px 3px 27px 0px rgba(0, 255, 136, 0.5);
+    box-shadow: 0px 3px 27px 0px rgba(0, 255, 136, 0.5);
 
 }
 
-
-.bg-container{
-    max-width: 550px;
-    padding-top:34px ;
-    margin: 0 auto;
-}
-
-.bg-container .bg{
-    position: relative;
-    background:url(../assets/hero-circle.png);
-    background-repeat: no-repeat;
-    width: 350px;
-    height: 350px;
-    background-size:contain;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-    
-}
-.bg-container .bg img{ 
-   max-width:200px;
-   height: auto;
-}
-.banner-textcontent{
-text-align: center;
+/* text-content */
+.content h1 {
+    color: white;
+    margin: 40px 0px 8px 0px;
+    font-size: 3.8rem;
+    font-weight: 700;
 
 }
-.content h1{
-color: white;
-margin: 40px 0px 8px 0px;
-font-size: 3.8rem;
-font-weight: 700;
+
+.content p {
+    color: white;
+    margin-bottom: 24px;
+    font-size: 1rem;
 
 }
-.content p{
-color: white;
-margin-bottom:24px;
-font-size: 1rem;
 
-}
-.green-btn{
+.green-btn {
     font-size: 16px;
     font-weight: 600;
     color: #00FF88;
     background: transparent;
-    border:1px solid rgba(0, 255, 136, 1);
+    border: 1px solid rgba(0, 255, 136, 1);
     border-radius: 1000px;
     padding: 12px 20px;
 }
@@ -173,20 +181,63 @@ font-size: 1rem;
 
 /* responsive styels */
 @media screen and (max-width:576px) {
+
     /* nav bar */
-.menu , .subscribe{
-    display: none;
+    .menu,
+    .subscribe {
+        display: none;
     }
-    nav{ 
-    gap:180px;
-    justify-content: left;
+
+    nav {
+        justify-content: space-around;
     }
-    nav .hamburger{
+
+    nav .hamburger {
         display: contents;
     }
-    .logo{
+
+    .logo {
         margin-left: 10px;
     }
 
-    
+    /* banner section */
+    .banner {
+        padding-top: 0.8em;
+        min-height: 100vh;
+        background-size: contain;
+        background-position: top center;
+    }
+
+    .bg-container {
+        padding-top: 0px;
+        max-width: 100%;
+    }
+
+    .bg-container .bg {
+        width: 35vw;
+        height: 35vw;
+    }
+
+    .bg-container .bg img {
+        width: 10vw;
+        height: auto;
+    }
+    #new {
+    top: 1px;
+    right: -18px;
+    font-size: 0.8rem;
+}
+
+
+    .content h1 {
+        font-size: 2.5rem;
+    }
+    .btn-primary{
+        font-size: 0.8rem;
+        padding: 12px;
+    }
+    .green-btn{
+        margin-left: 10px;
+    }
+
 }
