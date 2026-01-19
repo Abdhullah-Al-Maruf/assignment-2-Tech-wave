@@ -279,4 +279,35 @@ footer{
         margin-left: 10px;
     }
 
+
+
+
+
+
+/* footer-section */
+footer{
+        background-size: contain;
+}
+footer .footer-container{
+ padding: 40px 20px;
+}
+.link-container {
+    max-width: 255px;
+    grid-template-columns: repeat(2,1fr);
+    column-gap:16px;
+    padding: 60px 60px;
+    margin-top: 24px;
+    justify-content: center;
+  
+}
+.footer-container h1{
+    font-size: 3rem;
+ 
+}
+ .footer-container .copyright{
+    color: #fafafa9d;
+    padding:0px;
+  
+}
+ 
 }
