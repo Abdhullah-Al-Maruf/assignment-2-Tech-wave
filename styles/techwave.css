@@ -31,11 +31,6 @@
             #9100F8 100%);
 }
 
-main {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
 .display-flex {
     display: flex;
 }
@@ -181,6 +176,10 @@ nav .hamburger {
 #about-scection {
     padding: 50px 200px 120px 200px;
 }
+.about-container{
+    max-width: 1200px;
+    margin:0 auto;
+}
 
 .about-textcontent {
     text-align: center;
@@ -234,6 +233,69 @@ nav .hamburger {
     font-size: 1rem;
     color: #FFFFFF;
 }
+
+
+/* why choose us section */
+
+#why-choose{
+    background-color:#230E3D;
+}
+#why-choose .heading{
+   color: white;
+   font-size: 3rem;
+   text-align: center;
+   font-weight: 700;
+   padding-top: 120px;
+   margin-bottom: 40px;
+}
+.feature-card-container{
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 30px;
+    display: grid;
+    padding-bottom: 120px;
+    grid-template-areas: 
+    "card-1 card-2  card-2 "
+    "card-1 card-3 card-3 "
+    "card-4  card-4 card-5"
+
+}
+.card-1{
+    grid-area:card-1;
+}
+.card-2{
+    grid-area:card-2;
+}
+.card-3{
+    grid-area:card-3;
+}
+.card-4{
+    grid-area: card-4;
+}
+.card-5{
+    grid-area: card-5;
+}
+
+.feature-card{
+    padding:40px;
+    border: none;
+    border-radius: 40px;
+    background-color:rgba(53, 17, 101, 0.4);
+     box-shadow: 0px 3px 27px 0px rgba(17, 30, 218, 0.075);
+}
+.feature-card h2 {
+    font-size: 1.5rem;
+    color: #FFFFFF;
+    margin: 16px 0 16px 0;
+
+}
+.feature-card p {
+    font-size: 1rem;
+    color: #ffffff96;
+    line-height: 24px;
+
+}
+
 
 /* footer section  */
 footer {
