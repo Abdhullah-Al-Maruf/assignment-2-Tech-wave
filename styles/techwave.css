@@ -295,7 +295,54 @@ nav .hamburger {
     line-height: 24px;
 
 }
+/* feature-episode-section */
 
+#feature-episode .main-heading{
+    text-align: center;
+    color:#FFFFFF;
+    font-size: 3rem;
+    padding: 120px 0px 40px 0px;
+}
+
+.episode-card-container{
+    max-width:1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:30px;
+}
+
+.episode-card{
+   background-color: #250D44;
+    border-radius: 20px;
+    
+}
+
+.card-text-content{
+    padding: 24px;
+}
+.card-text-content h3{
+    font-size: 1.5rem;
+    color: #FFFFFF;
+    margin-bottom:12px;
+  
+}
+.card-text-content h4{
+    font-size: 1rem;
+    color: #00FF88;
+ ;
+  
+}
+.card-text-content p{
+    font-size: 1rem;
+    line-height: 24px;
+    color: #ffffffbb;
+    margin-bottom:12px;
+  
+}
+.episode-card iframe{
+    border-radius: 20px;
+}
 
 /* footer section  */
 footer {
@@ -465,6 +512,7 @@ footer {
 .feature-card-container{
     padding: 24px 20px;
 }
+
 
 
 
