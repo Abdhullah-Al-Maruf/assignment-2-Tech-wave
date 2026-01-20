@@ -407,6 +407,35 @@ footer {
 
 
 
+/* meet-the-host section */
+#meet-the-host h1{
+    font-size: 3rem;
+    color: #FFFFFF;
+    text-align: center;
+    margin-top: 120px;
+    padding-bottom: 40px;
+}
+#meet-the-host .container{
+    gap: 24px;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px;
+    border-radius:40px;
+    background-color:rgba(53, 17, 101, 0.4);
+}
+.host-content h3{
+    font-size: 2rem;
+    color: #FFFFFF;
+
+}
+.host-content p{
+    font-size: 1rem;
+    line-height: 24px;
+    color: #ffffff7e;
+    margin: 16px 0 16px 0;
+
+}
 
 
 
