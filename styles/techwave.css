@@ -136,8 +136,20 @@ nav .hamburger {
     font-weight: 600;
     background-color: #00FF88;
     box-shadow: 0px 3px 27px 0px rgba(0, 255, 136, 0.5);
+    animation: float 2.5s ease-in-out infinite;
 
 }
+@keyframes float {
+    0%{
+        transform: translateY(-12);
+    }
+    50%{
+        transform: translateY(-9px);
+    }
+    100% {
+        transform: translateY(-12);
+    }
+    }
 
 /* text-content */
 .content h1 {
@@ -145,8 +157,35 @@ nav .hamburger {
     margin: 40px 0px 8px 0px;
     font-size: 3.8rem;
     font-weight: 700;
+ 
+}
+#animate{
+    display: inline-block;
+    overflow: hidden;
+    border-right: 2px solid white;
+    width: 0;
+    animation:
+        typing 2.9s steps(8) infinite,
+        blink 1s step-end infinite;
+}
+/* main animation */
+@keyframes typing {
+    from {
+        width: 0;
+    }
+       60% {
+        width: 8ch;
+    }
+    80%{
+        width: 8ch;
+    }
+    100%{
+        width: 0;
+    }
 
 }
+
+
 
 .content p {
     color: white;
@@ -594,6 +633,12 @@ footer {
     flex-direction: column;
     text-align: center;
 }
+
+.container .HOST{
+    width: 100%;
+  
+}
+
 
     /* footer-section */
     footer {
